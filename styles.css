@@ -1,0 +1,82 @@
+@font-face {
+   font-family: 'Wellcome-Bold';
+   src: url('fonts/wellcome-bold-webfont.woff2') format('woff2');
+   font-weight: bold;
+   font-style: normal;
+}
+
+body {
+  font-family: Helvetica;
+  font-size: 17px;
+  line-height: 27px;
+  color: white;
+}
+
+h1, h2 {
+  font-family: 'Wellcome-Bold';
+  font-weight: bold;
+}
+
+.remark-slide-content h1 {
+  font-size: 41px;
+  line-height: 51px;
+}
+
+.remark-slide-content h2 {
+  font-size: 32px;
+  line-height: 41px;
+}
+
+.remark-slide-content {
+  background-color: #003170;
+}
+
+.remark-slide-content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 71px;
+  width: 71px;
+  height: 71px;
+  background: url('img/wellcome-logo.svg');
+}
+
+.remark-code, .remark-inline-code { font-family: monospace; }
+
+s {
+  opacity: 0.5;
+}
+
+ol, ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin-bottom: 11px;
+}
+
+a {
+  color: #F4BE7D;
+}
+
+a:hover, a:focus {
+  color: #ED6B00;
+}
+
+.center pre {
+  text-align: left;
+}
+
+img {
+  max-width: 75%;
+}
+
+.smallpre {
+  font-size: 0.5em;
+  line-height: 1em;
+}

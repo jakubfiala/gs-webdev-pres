@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to survive web dev in 2016</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <textarea id="source">
+class: center, middle
+
+# How to <s>set up webpack, React and ES7+ transpilation for your 2-button website in under 3 weeks</s> survive Web Development in 2016.
+
+#### Jakub Fiala
+
+---
+
+# Agenda
+
+1. Intro
+2. Why web dev?
+3. The state of the art
+4. The future
+
+---
+
+# Introduction
+
++ Wanted to study music production
++ Computer music is more fun
++ Went from *BMus Music Computing* to *MSci Creative Computing*
++ Interested in interactivity, experience and collaboration
++ Audiovisual programming on the Web
+
+---
+
+# Work
+
++ [atrament](https://github.com/jakubfiala/atrament.js) – drawing library for the HTML Canvas
++ [Meyda](https://github.com/hughrawlinson/meyda) - real-time audio analysis on the Web
++ [CodeCircle](http://codecircle.com/) - collaborative coding platform
++ many more inc. music &amp; digital art on [fiala.space](http://fiala.space)
+
+---
+
+# Wellcome
+
++ [wellcome.ac.uk](http://wellcome.ac.uk)
++ global organisation funding and promoting health research
++ Wellcome Collection &amp; Library
++ emerging interest in modern tech
++ entirely new development team
+
+---
+
+class: center, middle
+
+# Why web dev?
+
+---
+
+class: center, middle
+
+## It's easy.
+
+```javascript
+// play a sound
+let myAudio = new Audio();
+myAudio.addEventListener('load', e => myAudio.play());
+myAudio.src = '/audio/mySound.mp3';
+```
+
+---
+
+class: center, middle
+
+<img src="img/java-audio.png" />
+
+---
+
+class: center, middle
+
+## It's accessible.
+
+
+---
+
+class: center, middle
+
+<img src="img/broadband.png" />
+
+---
+
+class: center, middle
+
+## It's fast.
+
+<img src="img/lightsaber.jpg" />
+
+[Lightsaber Escape](https://www.chromeexperiments.com/experiment/lightsaber-escape) by Google/Unit9
+
+---
+
+class: center, middle
+
+# The state of the art
+
+---
+
+class: center, middle
+
+### The good stuff
+# User Experience at the core
+
+---
+
+class: center, middle
+
+### The good stuff
+# Better JavaScript
+
+---
+
+class: center, middle
+
+```javascript
+var xhr = new XMLHttpRequest();
+xhr.open('GET', url);
+xhr.responseType = 'json';
+
+xhr.onload = function() {
+  console.log(xhr.response);
+};
+
+xhr.onerror = function() {
+  console.log("Booo");
+};
+
+xhr.send();
+```
+ES5, Credit: Jake Archibald
+
+---
+
+class: center, middle
+
+```javascript
+(async() => {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  } catch (e) {
+    console.log("Booo")
+  }
+})();
+```
+ES7, Credit: Jake Archibald
+
+---
+
+class: center, middle
+
+### The good stuff
+# Reactivity
+
+---
+
+class: center, middle
+
+### The good stuff
+# Community
+
+---
+
+class: center, middle
+
+# The bad stuff
+
+---
+
+class: center, middle
+
+# BLOAT
+
+---
+
+class: center, middle
+
+<pre class="smallpre">
+├── LICENSE
+├── Procfile
+├── app.json
+├── client
+│  ├── components
+│  │  ├── Checkbox
+│  │  │  ├── CheckboxWithLabel.jsx
+│  │  │  └── CheckboxWithLabel.test.jsx
+│  │  ├── Index
+│  │  │  ├── Index.jsx
+│  │  │  └── Index.test.jsx
+│  │  └── NotFound
+│  │      ├── NotFound.jsx
+│  │      └── NotFound.test.jsx
+│  ├── main.jsx
+│  └── styles
+│      └── main.scss
+├── index.js
+├── package.json
+├── readme.md
+├── server
+│  └── views
+│      ├── index.ejs
+│      └── layout.ejs
+├── webpack.config.base.js
+├── webpack.config.development.js
+├── webpack.config.js
+└── webpack.config.production.js
+<pre>
+
+---
+
+class: center, middle
+
+<img src="img/num-files.png" />
+
+---
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      const slideshow = remark.create();
+    </script>
+</body>
+</html>
