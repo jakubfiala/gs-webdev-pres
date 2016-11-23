@@ -35,9 +35,9 @@ h1, h2 {
   content: '';
   position: absolute;
   top: 0;
-  right: 71px;
-  width: 71px;
-  height: 71px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
   background: url('img/wellcome-logo.svg');
 }
 
@@ -79,4 +79,8 @@ img {
 .smallpre {
   font-size: 0.5em;
   line-height: 1em;
+}
+
+.image--small {
+  height: 100px;
 }
